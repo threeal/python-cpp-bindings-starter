@@ -7,6 +7,10 @@ pre-commit:
     - name: fix formatting
       run: dprint fmt
 
+    - name: fix C++ formatting
+      files: find . -name *.cpp
+      run: clang-format -i {files}
+
     - name: fix lint
       run: uv run ruff check --fix
 

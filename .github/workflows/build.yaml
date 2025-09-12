@@ -21,6 +21,9 @@ jobs:
       - name: Check Formatting
         uses: dprint/check@v2.3
 
+      - name: Check C++ Formatting
+        run: find . -name '*.cpp' -exec clang-format --dry-run --Werror {} +
+
       - name: Check Lint
         run: uv run ruff check
 
