@@ -1,12 +1,13 @@
 # Python Starter
 
-A minimalist template for starting a new [Python](https://www.python.org/) project.
+A minimalist template for starting a new [Python](https://www.python.org/) project with C++ bindings.
 
 This template provides a basic Python project containing an example package with built-in support for formatting, linting, testing, and continuous integration.
 
 ## Key Features
 
 - Uses [uv](https://docs.astral.sh/uv/) as the package manager.
+- Supports C++ bindings using [nanobind](https://nanobind.readthedocs.io/).
 - Supports formatting and linting with [dprint](https://dprint.dev/) and [Ruff](https://github.com/astral-sh/ruff).
 - Supports testing and coverage checks with [Pytest](https://docs.pytest.org/en/stable/).
 - Fixes formatting and linting issues during pre-commit hooks using [Lefthook](https://lefthook.dev/).
@@ -59,6 +60,11 @@ Alternatively, you can remove the `LICENSE` file or leave it as is to keep the n
 Modify the source files under the [`src`](./src) directory to start writing the package. If you're new to Python, refer to [this documentation](https://wiki.python.org/moin/BeginnersGuide) for guidance.
 
 You can replace the [`src/bonacci`](./src/bonacci) directory with your package name. You can also add as many packages as you want to the `src` directory. Just make sure to update the contents of the [`pyproject.toml`](./pyproject.toml) file according to your package information.
+
+#### Writing C++ Extensions
+
+This template includes C++ bindings using [nanobind](https://nanobind.readthedocs.io/).
+Replace the [`src/bonacci_bindings`](./src/bonacci_bindings) with your C++ extension package name. When adding new C++ source files, make sure to update the [`CMakeLists.txt`](./CMakeLists.txt) file. For more information on nanobind, refer to [this documentation](https://nanobind.readthedocs.io/en/latest/).
 
 #### Testing the Package
 
