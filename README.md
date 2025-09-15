@@ -90,21 +90,21 @@ Update the version number of the package in the [`pyproject.toml`](./pyproject.t
 
 #### Build the Package
 
-Before releasing, check if the package can be built with:
+Before releasing, build only the source distribution package with:
 
 ```sh
-uv build
+uv build --sdist
 ```
 
-This will create a source tarball and wheel distribution of the package under the `dist` directory. You can verify the contents of the package or install it locally to ensure that it is built correctly. For more information on building the package, refer to [this documentation](https://docs.astral.sh/uv/guides/package/#building-your-package).
+This will create a source tarball under the `dist` directory. For wheels, download the artifacts from the CI build workflow which builds wheels for all supported platforms.
 
 #### Release on GitHub
 
-Create a new tag in the `main` branch corresponding to the version number of the release, and then draft a new release using that tag. You can also include the source tarball and wheel distribution as assets in the release. Refer to [this documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) for more information on managing releases on GitHub.
+Create a new tag in the `main` branch corresponding to the version number of the release, and then draft a new release using that tag. You can optionally include the source distribution (sdist) or wheels from CI artifacts as assets in the release. Refer to [this documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) for more information on managing releases on GitHub.
 
 #### Publish on PyPI
 
-Run the following command to publish the package to [PyPI](https://pypi.org/):
+Ensure both source distribution and wheels are in the `dist` directory before publishing, then run:
 
 ```sh
 uv publish
