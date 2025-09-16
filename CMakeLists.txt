@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(bonacci_bindings LANGUAGES CXX)
+project(bonacci LANGUAGES CXX)
 
 find_package(Python COMPONENTS Interpreter Development.Module REQUIRED)
 
@@ -10,5 +10,5 @@ execute_process(
 
 find_package(nanobind CONFIG REQUIRED)
 
-nanobind_add_module(sequence src/bonacci_bindings/sequence.cpp)
-install(TARGETS sequence DESTINATION bonacci_bindings)
+nanobind_add_module(sequence src/bonacci/sequence.cpp)
+install(TARGETS sequence DESTINATION bonacci)
