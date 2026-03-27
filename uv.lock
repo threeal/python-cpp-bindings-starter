@@ -70,7 +70,7 @@ wheels = [
 
 [[package]]
 name = "cibuildwheel"
-version = "3.1.4"
+version = "3.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bashlex" },
@@ -86,9 +86,9 @@ dependencies = [
     { name = "pyelftools" },
     { name = "wheel" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8e/25/69676d781cdbfc3408fe276dac900deaaa527053553b2a434aac534ed53d/cibuildwheel-3.1.4.tar.gz", hash = "sha256:549c499e21641043ad9596e6472765152fa471d1922538fa87a1a11bdcf93422", size = 354445, upload-time = "2025-08-19T18:22:52.515Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/03/0d/d77fd41334e2d9d570690711c04a07dccf00c246bf0a2195e0bcfb8a32fb/cibuildwheel-3.4.0.tar.gz", hash = "sha256:aae9fa8e3716e4b5cca76c92f8d4c704361618424d23814c0cea0e229d624862", size = 361300, upload-time = "2026-03-05T09:02:18.974Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d9/c8/9d25944bdc5b3998082260be2baee60f33944881c9410d8c137251389e47/cibuildwheel-3.1.4-py3-none-any.whl", hash = "sha256:c8dcd74a72e5e827d385b8851fc1996d0ca879e8563b837aec29493196d0ed50", size = 126312, upload-time = "2025-08-19T18:22:49.638Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/89/2bed6d29993e44fb2284251d8deff737db17a8c5e3fa2e2dccebe8b1add7/cibuildwheel-3.4.0-py3-none-any.whl", hash = "sha256:dcb193155a067e1b7405da4432347277a74c30d44f0dfae8c44fe7f26824183f", size = 129076, upload-time = "2026-03-05T09:02:17.459Z" },
 ]
 
 [[package]]
